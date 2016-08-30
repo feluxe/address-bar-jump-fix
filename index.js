@@ -46,6 +46,7 @@ class JumpFix {
   // If user starts scrolling save initial heights
   // Update scrolling status
   handleScroll() {
+    console.log('scrolling');
     if (this.isScrolling === false)
       this.saveHeights();
     this.setScrollingStatus();
