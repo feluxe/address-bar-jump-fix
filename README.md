@@ -5,15 +5,16 @@ Mobile Browser Address-bar Resize Jump Fix.
 
 Prevent elements from jumping if the mobile browser address bar appears/disappears.
 See this Stackoverflow question for a detailed explanation:
+
 http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
 
-###What this script does: (simplified)
+###What it does: (simplified)
 * When the user starts scrolling save the initial height of each item that has a certain data-attribute. (data-jump-fix='true')
 * While the user is scrolling and the viewport is resizing: do not change heights of selected elements, instead continue to use initial heights.
 
 ###Requirements
 
-the code is written in ES6/ES2015. Use 'Babel' or similar and compile it to ES5 if you want broad browser support. 
+The code is written in ES6/ES2015. Use 'Babel' or similar to compile it to ES5 if you want broad browser support. 
 
 ###Usage:
 
