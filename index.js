@@ -1,20 +1,7 @@
 /**
  * Mobile Browser Address-bar Resize Jump Fix.
  * Prevent elements from jumping if the mobile browser address bar appears/disappears.
- *
- * Usage:
- *
- * just import the script like this:
- *    import jumpFix from 'addressBarJumpFix';
- *
- * then call this function after all elements are finished loading:
- *    addressBarJumpFix.init();
- *
- * Now put the following data attribute on each html element that has a height depending on the
- * vp height:
- *    data-jump-fix='true'
- *
- */
+*/
 
 class JumpFix {
 
