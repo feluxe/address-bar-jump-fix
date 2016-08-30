@@ -1,7 +1,7 @@
 /**
  * Mobile Browser Address-bar Resize Jump Fix.
  * Prevent elements from jumping if the mobile browser address bar appears/disappears.
-*/
+ */
 
 class JumpFix {
 
@@ -61,4 +61,4 @@ class JumpFix {
   }
 }
 
-export default new JumpFix();
+module.exports = new JumpFix();
