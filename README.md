@@ -12,7 +12,11 @@ What this script does in short:
 
 ###Usage:
 
-import the script like this:
+First put the following data attribute on each html element that is jumping: 
+
+`data-jump-fix='true'`
+
+Then import the script like this:
 
 ```javascript
 import jumpFix from 'address-bar-jump-fix';
@@ -24,14 +28,12 @@ or like this:
 var jumpFix = require('address-bar-jump-fix');
 ```
 
-then call this function after all elements are finished loading:
+Finally call this function after all elements are finished loading:
 
 ```javascript
 addressBarJumpFix.init();
 ```
 
-Now put the following data attribute on each html element that is jumping: 
 
-`data-jump-fix='true'`
 
 That's it :)
