@@ -1,0 +1,26 @@
+{
+  "name": "address-bar-jump-fix",
+  "version": "1.0.1",
+  "description": "Mobile Browser Address-bar Resize Jump Fix.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feluxe/address-bar-jump-fix.git"
+  },
+  "keywords": [
+    "address",
+    "bar",
+    "jump",
+    "fix",
+    "mobile"
+  ],
+  "author": "Felix Meyer-Wolters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feluxe/address-bar-jump-fix/issues"
+  },
+  "homepage": "https://github.com/feluxe/address-bar-jump-fix#readme"
+}
