@@ -10,7 +10,7 @@ http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-
 
 ###What it does: (simplified)
 * When the user starts scrolling save the initial height of each item that has a certain data-attribute. (data-jump-fix='true')
-* While the user is scrolling and the viewport is resizing: do not change heights of selected elements, instead continue to use initial heights.
+* While the user is scrolling and the viewport is resizing: do not change height values of selected elements, instead continue to use initial heights.
 
 ###Requirements
 
