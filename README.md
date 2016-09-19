@@ -4,7 +4,7 @@ Mobile Browser Address-bar Resize Jump Fix.
 ===========================================
 
 Prevent elements from jumping if the mobile browser address bar appears/disappears.
-See this Stackoverflow question for a detailed explanation:
+See this Stackoverflow question for a detailed explanation of the problem:
 
 http://stackoverflow.com/questions/24944925/background-image-jumps-when-address-bar-hides-ios-android-mobile-chrome
 
@@ -37,9 +37,24 @@ Finally call this function after all elements have finished loading:
 addressBarJumpFix.init();
 ```
 
-
 That's it :)
+
+
+###Options:
+
+**offsetTimeout**
+
+default value = `100`
+
+```javascript
+addressBarJumpFix.init({ offsetTimeout: 250 });
+```
+
+Define how long the browser shall be blocked from resizing jumping elements after scrolling-event has stopped.
+If you use a very low value, there is the chance that the resize-jump-blocker is released before scrolling event is over and you get a jump.
+
+
 
 ###Developer info:
 The source is written in ES6/ES2015 and compiled to ES5 using Babel.
-Run 'npm start' to compile the source file.
+Run 'npm start' to compile the source file from ES6 into ES5.

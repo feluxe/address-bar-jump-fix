@@ -9,6 +9,7 @@ class JumpFix {
     this.items = null;
     this.isScrolling = false;
     this.timeoutScroll = null;
+    this.offsetTime = 100;
   }
 
   // This sets 'isScrolling' to true each time it fires and keeps it true for a certain amount of
@@ -19,7 +20,7 @@ class JumpFix {
     this.isScrolling = true;
     this.timeoutScroll = setTimeout(() => {
       this.isScrolling = false;
-    }, 100);
+    }, this.offsetTime);
   }
 
   // Save current element heights
@@ -57,7 +58,9 @@ class JumpFix {
     window.addEventListener('resize', this.handleResize.bind(this));
   }
 
-  init() {
+  init(options) {
+    const o = options || {};
+    this.offsetTime = 'offsetTime' in o && !isNaN(o.offsetTime) ? o.offsetTime : 100;
     this.items = document.querySelectorAll('[data-jump-fix="true"]');
     this.addListeners();
   }
