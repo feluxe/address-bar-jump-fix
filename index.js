@@ -16,6 +16,7 @@ var JumpFix = function () {
     this.items = null;
     this.isScrolling = false;
     this.timeoutScroll = null;
+    this.offsetTime = 100;
   }
 
   // This sets 'isScrolling' to true each time it fires and keeps it true for a certain amount of
@@ -31,7 +32,7 @@ var JumpFix = function () {
       this.isScrolling = true;
       this.timeoutScroll = setTimeout(function () {
         _this.isScrolling = false;
-      }, 100);
+      }, this.offsetTime);
     }
 
     // Save current element heights
@@ -83,7 +84,9 @@ var JumpFix = function () {
     }
   }, {
     key: 'init',
-    value: function init() {
+    value: function init(options) {
+      var o = options || {};
+      this.offsetTime = 'offsetTime' in o && !isNaN(o.offsetTime) ? o.offsetTime : 100;
       this.items = document.querySelectorAll('[data-jump-fix="true"]');
       this.addListeners();
     }
