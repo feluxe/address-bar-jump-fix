@@ -1,6 +1,6 @@
 {
   "name": "address-bar-jump-fix",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Mobile Browser Address-bar Resize Jump Fix.",
   "main": "index.js",
   "scripts": {

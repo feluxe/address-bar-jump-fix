@@ -1,5 +1,11 @@
 
 
+
+DEPRECATED
+
+This solution did not work well in all browsers. I decided to give up on it. A solution like this one: http://stackoverflow.com/a/25071131/1612318 seems more appropriate.
+
+
 Mobile Browser Address-bar Resize Jump Fix.
 ===========================================
 
